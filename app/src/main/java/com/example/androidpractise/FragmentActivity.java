@@ -16,6 +16,9 @@ public class FragmentActivity extends AppCompatActivity implements FragmentA.Fra
         fragmentA = new FragmentA();
         fragmentB = new FragmentB();
 
+
+
+
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container_a,fragmentA)
                 .replace(R.id.container_b, fragmentB)
