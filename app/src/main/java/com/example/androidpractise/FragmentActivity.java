@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class FragmentActivity extends AppCompatActivity implements FragmentA.FragmentAListener, FragmentB.FragmentBListener {
+public class FragmentActivity extends AppCompatActivity
+        // implements FragmentA.FragmentAListener, FragmentB.FragmentBListener
+{
 
     private FragmentA fragmentA;
     private FragmentB fragmentB;
@@ -28,6 +30,8 @@ public class FragmentActivity extends AppCompatActivity implements FragmentA.Fra
 //        getSupportFragmentManager().beginTransaction().replace(R.id.fragContainer,testFragment).commit();
 
     }
+/*
+
 
     @Override
     public void onInputASent(CharSequence inputText) {
@@ -38,4 +42,6 @@ public class FragmentActivity extends AppCompatActivity implements FragmentA.Fra
     public void onInputBSent(CharSequence inputText) {
         fragmentA.updateEditText(inputText);
     }
+
+ */
 }

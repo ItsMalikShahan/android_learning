@@ -14,15 +14,18 @@ import androidx.fragment.app.Fragment;
 
 public class FragmentB extends Fragment {
 
-
+    private SharedViewModel viewModel;
     EditText text;
     Button button;
-    private FragmentBListener listener;
+    /*
+        private FragmentBListener listener;
 
     public interface FragmentBListener{
         void onInputBSent(CharSequence inputText );
 
     }
+     */
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -34,13 +37,13 @@ public class FragmentB extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CharSequence input = text.getText();
-                listener.onInputBSent(input);
+
             }
         });
         return  v;
     }
-    public void updateEditText(CharSequence newText){
+    /*
+     public void updateEditText(CharSequence newText){
         text.setText(newText);
     }
 
@@ -60,5 +63,7 @@ public class FragmentB extends Fragment {
     public void onDetach() {
         super.onDetach();
         listener = null;
-    }
+   }
+     */
+
 }

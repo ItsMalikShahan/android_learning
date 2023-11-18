@@ -9,19 +9,25 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
 
 
 public class FragmentA extends Fragment {
 
     EditText text;
     Button button;
-    private FragmentAListener listener;
+    private SharedViewModel viewModel;
+    /*
+    Interface Method to share data
 
+    private FragmentAListener listener;
     public interface FragmentAListener{
         void onInputASent(CharSequence inputText );
-
     }
+     */
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,13 +39,23 @@ public class FragmentA extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CharSequence input = text.getText();
-                listener.onInputASent(input);
+                  viewModel.setData(text.getText());
+//                listener.onInputASent(input);
             }
         });
         return  v;
     }
-    public void updateEditText(CharSequence newText){
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+//        viewModel = new ViewModelProviders(getActivity()).get(SharedViewModel.class);
+    }
+    /*
+     Interface Method to share data
+
+
+        public void updateEditText(CharSequence newText){
         text.setText(newText);
     }
 
@@ -60,4 +76,6 @@ public class FragmentA extends Fragment {
         super.onDetach();
         listener = null;
     }
+     */
+
 }
