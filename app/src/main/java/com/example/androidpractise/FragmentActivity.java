@@ -1,6 +1,7 @@
 package com.example.androidpractise;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
 
@@ -8,6 +9,7 @@ public class FragmentActivity extends AppCompatActivity
         // implements FragmentA.FragmentAListener, FragmentB.FragmentBListener
 {
 
+    private SharedViewModel viewModel;
     private FragmentA fragmentA;
     private FragmentB fragmentB;
     @Override
@@ -17,8 +19,6 @@ public class FragmentActivity extends AppCompatActivity
 
         fragmentA = new FragmentA();
         fragmentB = new FragmentB();
-
-
 
 
         getSupportFragmentManager().beginTransaction()

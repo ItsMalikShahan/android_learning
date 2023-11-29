@@ -1,5 +1,6 @@
 package com.example.androidpractise;
 
+
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -46,11 +47,17 @@ public class FragmentA extends Fragment {
         return  v;
     }
 
+    /*
+
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-//        viewModel = new ViewModelProviders(getActivity()).get(SharedViewModel.class);
+        viewModel = new ViewModelProviders(this).get
+
     }
+
+ */
+
     /*
      Interface Method to share data
 

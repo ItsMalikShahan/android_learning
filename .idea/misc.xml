@@ -3,9 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/abc/AndroidStudioProjects/AndroidPractise/app/src/main/res/layout/activity_bottom_view.xml" value="0.225" />
+        <entry key="..\:/Users/abc/AndroidStudioProjects/AndroidPractise/app/src/main/res/layout/activity_dialog.xml" value="0.21" />
         <entry key="..\:/Users/abc/AndroidStudioProjects/AndroidPractise/app/src/main/res/layout/activity_fragment.xml" value="0.12552083333333333" />
         <entry key="..\:/Users/abc/AndroidStudioProjects/AndroidPractise/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/abc/AndroidStudioProjects/AndroidPractise/app/src/main/res/layout/design_login_dialog.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/abc/AndroidStudioProjects/AndroidPractise/app/src/main/res/layout/fragment_a.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/abc/AndroidStudioProjects/AndroidPractise/app/src/main/res/layout/fragment_favorite.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/abc/AndroidStudioProjects/AndroidPractise/app/src/main/res/layout/fragment_home.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/abc/AndroidStudioProjects/AndroidPractise/app/src/main/res/layout/fragment_search.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/abc/AndroidStudioProjects/AndroidPractise/app/src/main/res/menu/bottom_navigation_bar.xml" value="0.27291666666666664" />
       </map>
     </option>
   </component>
